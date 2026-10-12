@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Escuela Técnica</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #12355b;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        nav {
+            background: #0b2545;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .inicio {
+            background: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .inicio h2 {
+            font-size: 36px;
+            color: #12355b;
+            margin-bottom: 15px;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #12355b;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .tarjeta h3 {
+            color: #12355b;
+            margin-bottom: 8px;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 15px;
+            background: #12355b;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .boton:hover {
+            background: #1d5b96;
+        }
+
+        .contacto {
+            background: #12355b;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contacto h2 {
+            color: white;
+        }
+
+        footer {
+            background: #0b2545;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            .inicio h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>🏫 Escuela Técnica</h1>
+        <p>Aprender, crear y construir el futuro</p>
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#escuela">La Escuela</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+        <h2>Bienvenidos a la escuela tecnica n°2 </h2>
+        <p>Esta es la página web de nuestra escuela técnica.</p>
+        <p>Acá vas a encontrar información, proyectos, trabajos y novedades.</p>
+    </section>
+
+    <!-- LA ESCUELA -->
+    <section id="escuela">
+        <div class="contenedor">
+            <h2>🏫 La Escuela</h2>
+
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>¿Quiénes somos?</h3>
+                    <p>
+                        Somos una escuela técnica donde los estudiantes
+                        aprenden conocimientos generales y técnicos.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>¿Qué hacemos?</h3>
+                    <p>
+                        Realizamos proyectos, trabajos prácticos,
+                        actividades y diferentes experiencias educativas.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Nuestra misión</h3>
+                    <p>
+                        Preparar a los estudiantes para continuar sus
+                        estudios y desarrollarse profesionalmente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+        <div class="contenedor">
+            <h2>🔧 Proyectos y trabajos</h2>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+    <img src="imagenes/banco pescador.jpeg" 
+
+    <h3>Banco Pescador</h3>
+
+    <p><b>Proyecto:</b> Banco Pescador</p>
+    <p><b>Materia:</b> Procedimientos tecnicos</p>
+
+    <p>
+        Proyecto de construcción de un Banco Pescador.
+        En esta actividad se trabaja con el diseño, la interpretación
+        de planos y la construcción de las diferentes piezas que forman
+        el banco. Realizado para sentarse para pescar lo que contiene son 4 maderas de 38cm cada una igual a las 4. Luego sera escofinada marcandolacon un compass en los dos 2cm de cada punta. Luego se hace 2 lineas y  en el medio de esas dos lineas se hace un aujero eso con cada punta y con cada madera luego se eligen 5 maderas distintas y dejas 4,8 cm haces 2 aujeros separando 2 cm de cda uno y luego se atornillan. Pd:todos los elementos tanto como mechas deben ser sacados del pañol. Alguna duda que no entiendan pregunten a los profes
+    </p>
+     <a href="proyectos/banco-pescador.html" class="boton">Ver proyecto</a>
+</div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/Parrilla.jpeg"  
+                    <h3>Proyecto 2</h3>
+                    <p><b>Curso:</b> 2° año</p>
+                    <p><b>Materia:</b> taller</p>
+                    <p>Parrilla</p>
+                    <a href="proyectos/parrilla.html" class="boton">Ver proyecto</a>
+                </div>
+                     
+<div class="tarjeta">
+    <img src="imagenes/placa-aquino.jpeg" alt="Placa de Aquino">
+    <h3>Placa de Aquino</h3>
+    <p><b>Curso:</b> 3° año</p>
+    <p><b>Materia:</b> Sistemas tecnologicos.</p>
+    <p>Plaqueta de Aquino.</p>
+    <a href="proyectos/placa-aquino.html" class="boton">Ver proyecto</a>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CURSOS -->
+    <section id="cursos">
+        <div class="contenedor">
+            <h2>📚 Cursos</h2>
+
+            <div class="tarjetas">
+                <div class="tarjeta"><h3>1° Año</h3><p>Materias: ciencias naturales, ciencias sociales, educación artística, educación física, inglés, matemáticas, practicas del lenguaje, construccion de la ciudadania, procedimientos tecnicos, lenguajes tecnologicos, sistemas tecnologicos.</p></div>
+                <div class="tarjeta"><h3>2° Año</h3><p>Materias: practica del lenguaje, ciencias sociales, construccion de la ciudadania, educacion fisica, educacion artistica, matematica, ciencias naturales, ingles, procedimientos tecnicos, lenguajes tecnologicos, sistemas tecnologicos.</p></div>
+                <div class="tarjeta"><h3>3° Año</h3><p>Materias: biologia, construccion de la ciudadania, Educacion artistica, Educacion fisica, Fisico-quimica, Geografia, historia, ingles, matematica, practicas del lenguaje, procedimientos tecnicos, lenguajes tecnologicos, sistemas tecnologicos(gestion), sistemas tecnologicos(electronica).</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section id="noticias">
+        <div class="contenedor">
+            <h2>📰 Noticias</h2>
+
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Noticia 1</h3>
+                    <p>Acá podremos publicar las novedades de la escuela.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Noticia 2</h3>
+                    <p>Información sobre eventos y actividades.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Noticia 3</h3>
+                    <p>Próximamente más información.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria">
+        <div class="contenedor">
+            <h2>📸 Galería</h2>
+
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <img src="imagenes/foto 1.jpeg" alt="Foto de la escuela">
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/foto 2.jpeg" alt="Foto de la escuela">
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/foto 3.jpeg" alt="Foto de la escuela">
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/foto 4.jpeg" alt="Foto de la escuela">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <h2>📞 Contacto</h2>
+        <p>📍 Dirección: San luis 1450</p>
+        <p>📧 Email: tecnica2mardel@gmail.com</p>
+        <p>📱 Teléfono: 223-496-4151</p>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 - Escuela Técnica</p>
+        <p>Página web escolar</p>
+    </footer>
+
+</body>
+</html>
